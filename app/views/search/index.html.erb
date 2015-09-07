@@ -1,0 +1,7 @@
+<% if @results.empty? %>
+  <p> No results matching that query.</p>
+<% else %>
+  <% @results.all.each do |result| %>
+  <li> <%= link_to result.name, word_path(result.id) %></li>
+  <% end %>
+<% end %>

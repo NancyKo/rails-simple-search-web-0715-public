@@ -16,6 +16,7 @@ describe 'searching for word', :type => :feature do
       end 
 
       it 'redirects the exact word queried for' do 
+        # binding.pry
         expect(current_path).to eq("/words/#{@iguana.id}")
       end
 
